@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "823543542470",
+    "firebase_url": "https://waylo-support.firebaseio.com",
+    "project_id": "waylo-support",
+    "storage_bucket": "waylo-support.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823543542470:android:c50c5b2d63f4db4a",
+        "android_client_info": {
+          "package_name": "com.example.rahul.waylosupport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823543542470-dvaa7gr9dbemtc21l6mve8t98edgov65.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rahul.waylosupport",
+            "certificate_hash": "9a850ba8621b87363d69d2de8a327a6dd6fecb16"
+          }
+        },
+        {
+          "client_id": "823543542470-2i270uo2u1utnfi72vhl24p52a1l6be5.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "823543542470-2i270uo2u1utnfi72vhl24p52a1l6be5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJVIjiPBdlVisIrvvqBx3iMELnc15IdrY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823543542470-2i270uo2u1utnfi72vhl24p52a1l6be5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
