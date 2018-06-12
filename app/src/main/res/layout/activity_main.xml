@@ -27,9 +27,10 @@
         android:id="@+id/imageView"
         android:layout_width="383dp"
         android:layout_height="311dp"
+        android:layout_marginStart="8dp"
         android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@mipmap/ic_launcher_foreground"
-        tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
 </android.support.constraint.ConstraintLayout>
