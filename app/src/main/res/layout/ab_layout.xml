@@ -9,9 +9,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:text="Job Eligibility"
+        android:text="Waylo Support"
         android:textAlignment="center"
-        android:textColor="#FFFF00"
+        android:textColor="#ff4800"
         android:textSize="20sp" />
 
 </LinearLayout>
