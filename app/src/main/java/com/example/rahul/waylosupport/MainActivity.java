@@ -2,20 +2,26 @@ package com.example.rahul.waylosupport;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Window;
+//import android.view.Window;
 import android.widget.Toast;
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
+
 
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
+import com.facebook.login.Login;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FacebookAuthProvider;
@@ -23,10 +29,14 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 
+//import com.suke.widget.SwitchButton;
+
 public class MainActivity extends AppCompatActivity {
 
     private CallbackManager mCallbackManager;
+
     private FirebaseAuth mAuth;
+
     private static final String TAG = "FACELOG";
 
 
@@ -34,11 +44,33 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.ab_layout);
 
-        // Initialize Firebase Auth
+
+//        com.suke.widget.SwitchButton switchButton = (com.suke.widget.SwitchButton)
+//                findViewById(R.id.switch_button);
+//
+//        switchButton.setChecked(true);
+//        switchButton.isChecked();
+//        switchButton.toggle();     //switch state
+//        switchButton.toggle(true);//switch without animation
+//        switchButton.setShadowEffect(true);//disable shadow effect
+//        switchButton.setEnabled(true);//disable button
+//        switchButton.setEnableEffect(true);//disable the switch animation
+//        switchButton.setOnCheckedChangeListener(new SwitchButton.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(SwitchButton view, boolean isChecked) {
+//                //TODO do your job
+//            }
+//        });
+
+
+
+//         Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
 
-        // Initialize Facebook Login button
+//         Initialize Facebook Login button
         mCallbackManager = CallbackManager.Factory.create();
 
         LoginButton loginButton = findViewById(R.id.login_button);
@@ -78,10 +110,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateUI() {
-        Toast.makeText(MainActivity.this,"You're Logged In",Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this,"You're Logged In", Toast.LENGTH_LONG).show();
 
-        Intent accountIntent = new Intent(MainActivity.this, Main2Activity.class);
-        startActivity(accountIntent);
+        Intent nextIntent = new Intent(MainActivity.this, Main2Activity.class);
+        startActivity(nextIntent);
         finish();
 
     }
@@ -120,4 +152,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
     }
-}
+ }
+
+

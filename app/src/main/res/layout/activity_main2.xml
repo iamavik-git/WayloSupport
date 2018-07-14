@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,11 +12,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:orientation="vertical">
 
         <com.suke.widget.SwitchButton
             android:id="@+id/switch_button"
@@ -23,7 +21,123 @@
 
     </LinearLayout>
 
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/yellow"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="208dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#7ab800"
+        fancy:fb_focusColor="#9bd823"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="Yellow"
+        fancy:fb_textColor="#FFFFFF">
 
+    </mehdi.sakout.fancybuttons.FancyButton>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/green"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/yellow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-208dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#7ab800"
+        fancy:fb_focusColor="#9bd823"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="Green"
+        fancy:fb_textColor="#FFFFFF" />
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/red"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yellow"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#7ab800"
+        fancy:fb_focusColor="#9bd823"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="Red"
+        fancy:fb_textColor="#FFFFFF">
+
+    </mehdi.sakout.fancybuttons.FancyButton>
+    <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:fab="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<ListView-->
+            <!--android:id="@+id/list"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+        <!--<com.github.clans.fab.FloatingActionButton-->
+            <!--android:id="@+id/fab"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom|right"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:src=""-->
+            <!--fab:fab_colorNormal="?android:attr/colorActivatedHighlight"-->
+            <!--fab:fab_colorPressed="@android:color/holo_orange_dark"-->
+            <!--fab:fab_colorRipple="@android:color/holo_red_light" />-->
+
+    <!--</FrameLayout>-->
+
+    <!--<com.github.clans.fab.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_gravity="bottom|right"-->
+        <!--android:layout_marginEnd="94dp"-->
+        <!--android:src=""-->
+        <!--app:fab_colorNormal="#DA4336"-->
+        <!--app:fab_colorPressed="#E75043"-->
+        <!--app:fab_colorRipple="#99FFFFFF"-->
+        <!--app:fab_hideAnimation="@anim/fab_scale_down"-->
+        <!--app:fab_label=""-->
+        <!--app:fab_progress="0"-->
+        <!--app:fab_progress_backgroundColor="#4D000000"-->
+        <!--app:fab_progress_color="#FF009688"-->
+        <!--app:fab_progress_indeterminate="false"-->
+        <!--app:fab_progress_max="100"-->
+        <!--app:fab_progress_showBackground="true"-->
+        <!--app:fab_shadowColor="#66000000"-->
+        <!--app:fab_shadowRadius="4dp"-->
+        <!--app:fab_shadowXOffset="1dp"-->
+        <!--app:fab_shadowYOffset="3dp"-->
+        <!--app:fab_showAnimation="@anim/fab_scale_up"-->
+        <!--app:fab_showShadow="true"-->
+        <!--app:fab_size="normal" />-->
 
 
 </RelativeLayout>
+
+
+
+
