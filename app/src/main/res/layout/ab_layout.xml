@@ -11,7 +11,7 @@
         android:layout_gravity="center"
         android:text="Waylo Support"
         android:textAlignment="center"
-        android:textColor="#ff4800"
+        android:textColor="#ff9112"
         android:textSize="20sp" />
 
 </LinearLayout>
