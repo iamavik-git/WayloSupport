@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:fancy="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Main2Activity"
-    tools:layout_editor_absoluteY="81sp">
+    tools:layout_editor_absoluteY="81dp">
 
 
     <mehdi.sakout.fancybuttons.FancyButton
         android:id="@+id/green"
         android:layout_width="100sp"
         android:layout_height="40sp"
-        android:layout_marginBottom="33sp"
-        android:layout_marginTop="134sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="124dp"
         android:paddingBottom="10sp"
         android:paddingLeft="20sp"
         android:paddingRight="20sp"
         android:paddingTop="10sp"
-        app:layout_constraintBottom_toTopOf="@+id/yellow"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         fancy:fb_borderColor="#FFFFFF"
         fancy:fb_borderWidth="1dp"
         fancy:fb_defaultColor="#008000"
@@ -31,22 +27,22 @@
         fancy:fb_iconPosition="left"
         fancy:fb_radius="30sp"
         fancy:fb_text="Green"
-        fancy:fb_textColor="#FFFFFF" />
+        fancy:fb_textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="134dp" />
 
 
     <mehdi.sakout.fancybuttons.FancyButton
         android:id="@+id/yellow"
         android:layout_width="100sp"
         android:layout_height="40sp"
-        android:layout_marginBottom="32sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="197dp"
         android:paddingBottom="10sp"
         android:paddingLeft="20sp"
         android:paddingRight="20sp"
         android:paddingTop="10sp"
-        app:layout_constraintBottom_toTopOf="@+id/red"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/green"
         fancy:fb_borderColor="#FFFFFF"
         fancy:fb_borderWidth="1sp"
         fancy:fb_defaultColor="#70a900"
@@ -54,22 +50,22 @@
         fancy:fb_iconPosition="left"
         fancy:fb_radius="30sp"
         fancy:fb_text="Yellow"
-        fancy:fb_textColor="#FFFFFF" />
+        fancy:fb_textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="207dp" />
 
 
     <mehdi.sakout.fancybuttons.FancyButton
         android:id="@+id/red"
         android:layout_width="100sp"
         android:layout_height="40sp"
-        android:layout_marginBottom="192sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="204dp"
         android:paddingBottom="10sp"
         android:paddingLeft="20sp"
         android:paddingRight="20sp"
         android:paddingTop="10sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/yellow"
         fancy:fb_borderColor="#FFFFFF"
         fancy:fb_borderWidth="1sp"
         fancy:fb_defaultColor="#ff0019"
@@ -77,10 +73,12 @@
         fancy:fb_iconPosition="left"
         fancy:fb_radius="30sp"
         fancy:fb_text="Red"
-        fancy:fb_textColor="#FFFFFF" />
+        fancy:fb_textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="279dp" />
 
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
 
 
 

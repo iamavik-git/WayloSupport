@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -23,9 +22,6 @@ import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-
-
-
 public class MainActivity extends AppCompatActivity {
 
     private CallbackManager mCallbackManager;
@@ -33,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
 
     private static final String TAG = "FACELOG";
+
 
 
     @Override
@@ -43,8 +40,13 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setCustomView(R.layout.ab_layout);
 
 
+
+
 //         Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
+
+
+
 
 //         Initialize Facebook Login button
         mCallbackManager = CallbackManager.Factory.create();
@@ -85,11 +87,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     private void updateUI() {
         Toast.makeText(MainActivity.this,"You're Logged In", Toast.LENGTH_LONG).show();
 
         Intent i = new Intent(MainActivity.this, Main2Activity.class);
-        startActivity(i);
+        MainActivity.this.startActivity(i);
+//        startActivity(i);
+
         finish();
 
     }
@@ -115,11 +120,13 @@ public class MainActivity extends AppCompatActivity {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithCredential:success");
                             FirebaseUser user = mAuth.getCurrentUser();
+                            Toast.makeText(MainActivity.this,"All set", Toast.LENGTH_LONG).show();
                             updateUI();
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithCredential:failure", task.getException());
                             Toast.makeText(MainActivity.this, "Authentication failed.", Toast.LENGTH_SHORT).show();
+
                             updateUI();
                         }
 

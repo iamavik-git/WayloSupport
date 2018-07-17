@@ -25,7 +25,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:16.0.2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    implementation 'com.facebook.android:facebook-login:4.34.0'
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
     implementation 'com.github.zcweng:switch-button:0.0.3@aar'
     implementation 'com.github.medyo:fancybuttons:1.8.4'
     implementation 'com.github.clans:fab:1.6.4'
