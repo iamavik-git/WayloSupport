@@ -6,12 +6,12 @@
 
     <TextView
         android:id="@+id/mytext"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Waylo Support"
         android:textAlignment="center"
-        android:textColor="#ff9112"
+        android:textColor="#ffffff"
         android:textSize="20sp" />
 
 </LinearLayout>

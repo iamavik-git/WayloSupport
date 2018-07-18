@@ -22,6 +22,7 @@ import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+
 public class MainActivity extends AppCompatActivity {
 
     private CallbackManager mCallbackManager;
@@ -39,14 +40,8 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.ab_layout);
 
-
-
-
 //         Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
-
-
-
 
 //         Initialize Facebook Login button
         mCallbackManager = CallbackManager.Factory.create();
@@ -92,9 +87,11 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(MainActivity.this,"You're Logged In", Toast.LENGTH_LONG).show();
 
         Intent i = new Intent(MainActivity.this, Main2Activity.class);
-        MainActivity.this.startActivity(i);
-//        startActivity(i);
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+//        MainActivity.this.startActivity(i);
 
+//        i.putExtra("BitmapImage", profPict);
+        startActivity(i);
         finish();
 
     }
